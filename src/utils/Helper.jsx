@@ -1,3 +1,11 @@
+export const NAV_ITEMS_DATA = [
+    { text: "About", url: "#hero", },
+    { text: "IBO Event", url: "#hero", },
+    { text: "EEFI Tokenomics", url: "#hero", },
+    { text: "Team", url: "#blog", },
+    { text: "Partners", url: "#team", },
+    { text: "Roadmap", url: "#product", },
+];
 export const ROADMAP_DATA = [
     {
         number: "2022", text: "Ideation of Elastic Protocol", items: [
@@ -42,5 +50,32 @@ export const ROADMAP_DATA = [
     },
     {
         number: "Q2 2025", text: "Hand over Elastic Finance DAO to Community: Complete decentralization of Elastic Finance DAO, its treasury, its yield strategies and community governance"
+    },
+]
+export const GAME_DATA = [
+    {
+        items: [
+            { icon: "bondIcon", title: "EEFI Bonds", text: " Purchase. Lock up. Get Discount" },
+            { icon: "vaultIcon", title: "Vault  ", text: "Deposit + Earn" },
+            { icon: "positionIcon", title: "LP Positions ", text: "Yield Farming" },
+        ]
+    },
+    {
+        items: [
+            { icon: "growthIcon", title: "Funding raised acquires Growth assets" },
+            { icon: "flagIcon", title: "OHM Treasury Strategy ", text: "Deposit + Earn" },
+            { icon: "marketsIcon", title: "Markets ", text: "Trade + Arb (Fees)" },
+        ]
+    },
+    {
+        items: [
+            { icon: "fromIcon", title: "Yield From Growth Assets" },
+            { icon: "triangleIcon", title: "Fees. Revenue. Yield to Treasury" },
+        ]
+    },
+    {
+        items: [
+            { icon: "fireIcon", title: "EEFI Furnace ", text: "Buy + Burn EEFI" },
+        ]
     },
 ]

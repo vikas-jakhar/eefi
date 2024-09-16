@@ -1,2 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@font-face {
+    font-family: "Neue Machina normal";
+    src: url(../src/assets/fonts/NeueMachina-Light.ttf);
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    src: url(../src/assets/fonts/NeueMachina-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Neue Machina bold";
+    src: url(../src/assets/fonts/NeueMachina-Ultrabold.ttf);
+}
+
+.machina_normal {
+    font-family: "Neue Machina", sans-serif;
+}
+
+.machina_regular {
+    font-family: "Neue Machina", sans-serif;
+}
+
+.machina_bold {
+    font-family: "Neue Machina", sans-serif;
+}
