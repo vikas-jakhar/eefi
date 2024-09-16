@@ -12,7 +12,6 @@ module.exports = {
       },
       fontFamily: {
         'plus': "'Plus Jakarta Sans', sans-serif",
-        'raleway': "'Raleway', sans-serif",
       },
       container: {
         center: true,

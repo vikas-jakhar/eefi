@@ -19,21 +19,21 @@ const RoadMap = () => {
                             <div className='mt-4 text-white text-base font-normal'>
                                 <div className="flex items-start">
                                     <span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span>
-                                    <p className='font-normal font-raleway'>{item.text}</p>
+                                    <p className='font-normal '>{item.text}</p>
                                 </div>
-                                {item.heading && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal font-raleway'>{item.heading}</p></div>}
-                                {item.title && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal font-raleway'>{item.title}</p></div>}
+                                {item.heading && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.heading}</p></div>}
+                                {item.title && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.title}</p></div>}
                                 {item.items?.map((e, index) => (
                                     <div
                                         key={index}
                                         className={`text-white text-base font-normal ${isIndented(idx) ? 'pl-6' : ''}`}
                                     >
-                                        <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal font-raleway'>{e.title}</p></div>
-                                        <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal font-raleway'>{e.text}</p></div>
-                                        {e.data && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal font-raleway'>{e.data}</p></div>}
+                                        <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.title}</p></div>
+                                        <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.text}</p></div>
+                                        {e.data && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.data}</p></div>}
                                     </div>
                                 ))}
-                                {item.data && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal font-raleway'>{item.data}</p></div>}
+                                {item.data && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.data}</p></div>}
                             </div>
                             <div
                                 className={`absolute flex items-center top-0 ${isRightAligned(idx)

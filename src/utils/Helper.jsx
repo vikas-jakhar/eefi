@@ -6,6 +6,11 @@ export const NAV_ITEMS_DATA = [
     { text: "Partners", url: "#team", },
     { text: "Roadmap", url: "#product", },
 ];
+export const DROPDOWN_DATA = [
+    { text: "data 1" },
+    { text: "data 2" },
+    { text: "data 3" },
+]
 export const ROADMAP_DATA = [
     {
         number: "2022", text: "Ideation of Elastic Protocol", items: [
