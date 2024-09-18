@@ -28,7 +28,7 @@ const Hero = () => {
                     <span key={idx} className='w-2.5 h-2.5 bg-dark-blue rounded-full flex'></span>
                 ))}
             </div>
-            <img className='absolute -top-12 left-[-124px] xl:max-w-[1160px] h-[810px] w-full 2xl:block hidden' src={heroVector} alt="heroVector" />
+            <img className='absolute -top-12 left-[-124px] h-[810px] w-[80%] 2xl:block hidden' src={heroVector} alt="heroVector" />
         </div>
     )
 }

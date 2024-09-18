@@ -32,3 +32,11 @@
 .machina_bold {
     font-family: "Neue Machina", sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: white;
+}
