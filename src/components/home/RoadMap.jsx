@@ -1,5 +1,5 @@
 import { ROADMAP_DATA } from '../../utils/Helper';
-import clouds from "../../assets/images/webp/clouds-bottom.webp";
+import clouds from "../../assets/images/webp/clouds.webp";
 
 const RoadMap = () => {
     const isRightAligned = (idx) => idx % 2 !== 0;
