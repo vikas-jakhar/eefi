@@ -6,6 +6,7 @@ import Stretch from './components/home/Stretch';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
+import ScrollToTop from './components/common/ScrollToTop';
 
 function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ function App() {
       <Stretch />
       <RoadMap />
       <Game />
+      <ScrollToTop />
     </div>
   );
 }

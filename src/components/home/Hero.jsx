@@ -20,7 +20,7 @@ const Hero = () => {
                             Audited by Omniscia
                         </a>
                     </div>
-                    <img className='xl:max-w-[635px] h-[502px] w-[335px] xl:h-[876px] md:max-w-[450px] md:h-auto md:w-full absolute lg:relative top-24 md:top-0 right-0 -z-10 opacity-50 sm:opacity-70 pointer-events-none lg:pt-0 pt-9' src={heroImage} alt="heroImage" />
+                    <img className='xl:max-w-[635px] h-[502px] w-[335px] xl:h-[876px] md:max-w-[450px] md:h-auto md:w-full absolute lg:relative top-24 md:top-0 right-0 -z-10 opacity-50 sm:opacity-70 lg:opacity-100 pointer-events-none lg:pt-0 pt-9' src={heroImage} alt="heroImage" />
                 </div>
             </div>
             <div className="flex flex-col gap-6 absolute top-12 right-7">
