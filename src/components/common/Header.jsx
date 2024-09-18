@@ -72,7 +72,7 @@ const Header = () => {
                                 <span className="relative z-10">Enter App</span>
                             </button>
                         </div>
-                        <button className='sm:p-[13px_32px] p-[12px_24px] hidden lg:block border lg:text-light-blue text-white lg:border-light-blue border-white rounded-lg font-medium text-base leading-4 before:ease relative overflow-hidden before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:translate-y-12 before:-rotate-90 lg:before:bg-light-blue before:bg-white before:transition-all before:duration-500 lg:hover:text-white hover:text-light-blue hover:before:-rotate-180'>
+                        <button className='sm:p-[13px_32px] p-[12px_24px] hidden lg:block border lg:text-light-blue text-white lg:border-light-blue border-white rounded-lg font-medium text-base leading-4 before:ease relative overflow-hidden before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:-translate-y-full before:-top-2 before:-rotate-90 lg:before:bg-light-blue before:bg-white before:transition-all before:duration-500 lg:hover:text-white hover:text-light-blue hover:before:top-0 hover:before:translate-y-0 hover:before:-rotate-90'>
                             <span className="relative z-10">Enter App</span>
                         </button>
                         <button

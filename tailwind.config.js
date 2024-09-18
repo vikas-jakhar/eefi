@@ -24,12 +24,15 @@ module.exports = {
         }
       },
       fontSize: {
+        'custom-lg': "28px",
         'custom-xl': "46px",
+        'custom-2xl': "85px",
       },
       colors: {
         'light-blue': "#1643C3",
         'off-blue': "#1643C31A",
         'medium-blue': "#4273FF",
+        'dark-blue': "#002F93",
       },
       boxShadow: {
         'custom-xl': "4.33px 4.33px 16.55px 0px #FFFFFF42"

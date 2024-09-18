@@ -1,39 +1,39 @@
-import React from 'react';
 import { ROADMAP_DATA } from '../../utils/Helper';
+import clouds from "../../assets/images/webp/clouds-bottom.webp";
 
 const RoadMap = () => {
     const isRightAligned = (idx) => idx % 2 !== 0;
     const isIndented = (idx) => [0, 1, 3].includes(idx);
 
     return (
-        <div className='bg-roadmap-layer bg-cover py-24'>
-            <div className="container my-12">
-                <h2 className='font-bold machina_bold text-center text-custom-xl text-white'>Roadmap</h2>
-                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-16 md:mt-24 lg:mt-[117px]">
+        <div className='bg-roadmap-layer bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed'>
+            <div className="container my-12 relative z-[1]">
+                <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-4xl lg:text-custom-xl text-white'>Roadmap</h2>
+                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px]">
                     {ROADMAP_DATA.map((item, idx) => (
-                        <div
+                        <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`}
                             key={idx}
                             className={`max-w-[373px] relative w-full border border-light-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-off-blue ${isRightAligned(idx) ? 'lg:ml-auto' : ''}`}
                         >
-                            <p className='font-medium text-xl text-white font-plus'>{item.number}</p>
+                            <p data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className='font-medium text-xl text-white font-plus'>{item.number}</p>
                             <div className='mt-4 text-white text-base font-normal'>
-                                <div className="flex items-start">
+                                <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start">
                                     <span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span>
                                     <p className='font-normal '>{item.text}</p>
                                 </div>
-                                {item.heading && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.heading}</p></div>}
-                                {item.title && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.title}</p></div>}
+                                {item.heading && <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.heading}</p></div>}
+                                {item.title && <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.title}</p></div>}
                                 {item.items?.map((e, index) => (
                                     <div
                                         key={index}
                                         className={`text-white text-base font-normal ${isIndented(idx) ? 'pl-6' : ''}`}
                                     >
-                                        <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.title}</p></div>
-                                        <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.text}</p></div>
-                                        {e.data && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.data}</p></div>}
+                                        <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.title}</p></div>
+                                        <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.text}</p></div>
+                                        {e.data && <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{e.data}</p></div>}
                                     </div>
                                 ))}
-                                {item.data && <div className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.data}</p></div>}
+                                {item.data && <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.data}</p></div>}
                             </div>
                             <div
                                 className={`absolute flex items-center top-0 ${isRightAligned(idx)
@@ -53,9 +53,10 @@ const RoadMap = () => {
                             </div>
                         </div>
                     ))}
-                    <span className='flex h-[99%] lg:h-full w-0.5 bg-medium-blue absolute top-3 lg:top-0 left-0 sm:left-10 lg:left-1/2 lg:-translate-x-1/2'></span>
+                    <span data-aos='fade-up' className='flex h-[99%] lg:h-full w-0.5 bg-medium-blue absolute top-3 lg:top-0 left-0 sm:left-10 lg:left-1/2 lg:-translate-x-1/2'></span>
                 </div>
             </div>
+            <img src={clouds} alt="clouds" className='w-full absolute top-0 left-0 -translate-y-1/2' />
         </div>
     );
 };
