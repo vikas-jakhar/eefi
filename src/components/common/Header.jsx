@@ -44,7 +44,7 @@ const Header = () => {
                         <a href="/" className='-ml-2.5'>
                             <img className='pointer-events-none w-[68px]' src={logo} alt="#" />
                         </a>
-                        <div className={`flex flex-col lg:flex-row items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:backdrop-blur-md max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
+                        <div className={`flex flex-col lg:flex-row lg:pl-16 items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:backdrop-blur-md bg-medium-blue lg:bg-transparent max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
                             }`}>
                             {NAV_ITEMS_DATA.map((items, index) => (
                                 <a key={index} href={`/${items.url}`} onClick={(e) => handleClick(e, items.url.substring(1))} className='font-medium lg:text-base text-lg leading-5 text-white duration-300 ease-linear after:[] after:absolute after:bg-white after:h-px after:w-0 after:right-0 after:bottom-0 after:rounded after:duration-300 after:ease-linear hover:after:w-full hover:after:right-auto hover:after:left-0 relative'>{items.text}</a>
@@ -72,7 +72,7 @@ const Header = () => {
                                 <span className="relative z-10">Enter App</span>
                             </button>
                         </div>
-                        <button className='sm:p-[13px_32px] p-[12px_24px] hidden lg:block border lg:text-light-blue text-white lg:border-light-blue border-white rounded-lg font-medium text-base leading-4 before:ease relative overflow-hidden before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:-translate-y-full before:-top-2 before:-rotate-90 lg:before:bg-light-blue before:bg-white before:transition-all before:duration-500 lg:hover:text-white hover:text-light-blue hover:before:top-0 hover:before:translate-y-0 hover:before:-rotate-90'>
+                        <button className='sm:p-[13px_32px] p-[12px_24px] hidden lg:block border bg-white xl:bg-transparent lg:text-light-blue text-white lg:border-light-blue border-white rounded-lg font-medium text-base leading-4 before:ease relative overflow-hidden before:absolute before:left-0 before:-ml-2 before:h-48 before:w-48 before:origin-top-right before:-translate-x-full before:-translate-y-full before:-top-2 before:-rotate-90 lg:before:bg-light-blue before:bg-white before:transition-all before:duration-500 lg:hover:text-white hover:text-light-blue hover:before:top-0 hover:before:translate-y-0 hover:before:-rotate-90'>
                             <span className="relative z-10">Enter App</span>
                         </button>
                         <button

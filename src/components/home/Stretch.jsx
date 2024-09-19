@@ -7,7 +7,7 @@ const Stretch = () => {
         <div className='bg-stretch-layer md:bg-fixed bg-no-repeat bg-center bg-cover lg:pt-5 lg:h-[825px] md:h-[640px] sm:h-[556px] h-[520px] relative'>
             <div className='container relative'>
                 <div className='flex justify-center lg:pt-0 pt-3'>
-                    <h2 data-aos='zoom-in' className='font-plus text-white drop-shadow-custom-xl font-extrabold lg:text-custom-3xl md:text-4xl sm:text-3xl text-2xl xl:leading-[62px] leading-10 md:left-8 text-center max-w-[726px]'>
+                    <h2 data-aos='zoom-in' className='font-plus text-white drop-shadow-custom-xl font-extrabold lg:text-custom-2xl md:text-4xl sm:text-3xl text-2xl xl:leading-[62px] leading-10 md:left-8 text-center max-w-[726px]'>
                         Amplify and STRETCH GAINS
                     </h2>
                 </div>

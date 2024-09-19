@@ -26,7 +26,8 @@ module.exports = {
       fontSize: {
         'custom-lg': "28px",
         'custom-xl': "46px",
-        'custom-2xl': "85px",
+        'custom-2xl': "52px",
+        'custom-3xl': "85px",
       },
       colors: {
         'light-blue': "#1643C3",
