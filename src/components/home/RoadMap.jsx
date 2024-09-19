@@ -9,11 +9,11 @@ const RoadMap = () => {
         <div className='bg-roadmap-layer bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed'>
             <div className="container my-12 relative z-[1]">
                 <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-2xl lg:text-custom-xl text-white'>Roadmap</h2>
-                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 md:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px]">
+                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 md:pl-0 gap-7 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px]">
                     {ROADMAP_DATA.map((item, idx) => (
                         <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`}
                             key={idx}
-                            className={`lg:max-w-[373px] md:max-w-[298px] max-w-[373px] relative w-full border border-light-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-off-blue ${isRightAligned(idx) ? 'md:ml-auto' : ''}`}
+                            className={`lg:max-w-[373px] md:max-w-[298px] max-w-[373px] relative w-full border border-light-blue py-5 sm:py-7 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-off-blue ${isRightAligned(idx) ? 'md:ml-auto' : ''}`}
                         >
                             <p data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className='font-medium text-xl text-white font-plus'>{item.number}</p>
                             <div className='mt-4 text-white text-base font-normal'>

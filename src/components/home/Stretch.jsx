@@ -12,7 +12,7 @@ const Stretch = () => {
                     </h2>
                 </div>
                 <div className='flex justify-center items-center lg:mt-[325px] md:mt-[196px] sm:mt-[148px] mt-[110px] relative z-[1]'>
-                    <p data-aos='zoom-in' className='max-w-[554px] drop-shadow-custom-xl xl:drop-shadow-none text-white text-sm leading-[22px] font-normal text-center'>
+                    <p data-aos='zoom-in' className='max-w-[554px] drop-shadow-custom-xl xl:drop-shadow-none text-white text-sm lg:leading-[22px] font-normal text-center'>
                         We take a different balanced approach to finding and creating yield opportunities in the everchanging crypto market. Our yield strategies help users stay protected and hedged during bear markets and amplify yield during bull markets without resorting to leverage or other dangerous techniques.
                     </p>
                 </div>
