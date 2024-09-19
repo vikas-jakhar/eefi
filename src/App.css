@@ -20,6 +20,11 @@
     src: url(../src/assets/fonts/NeueMachina-Ultrabold.ttf);
 }
 
+@font-face {
+    font-family: "Neue Machina";
+    src: url(../src/assets/fonts/NeueMachina-Ultrabold.ttf);
+}
+
 .machina_normal {
     font-family: "Neue Machina", sans-serif;
 }
@@ -32,10 +37,15 @@
     font-family: "Neue Machina", sans-serif;
 }
 
+.machina_Ultrabold {
+    font-family: "Neue Machina", sans-serif;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
 
-::-webkit-scrollbar-button {
-    background-color: white;
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
 }

@@ -8,8 +8,8 @@ const RoadMap = () => {
     return (
         <div className='bg-roadmap-layer bg-cover relative pb-2 pt-1 sm:py-10 lg:py-24 bg-fixed'>
             <div className="container my-12 relative z-[1]">
-                <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-2xl lg:text-custom-xl text-white'>Roadmap</h2>
-                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 md:pl-0 gap-7 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-32">
+                <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-2xl lg:leading-[55px] lg:text-custom-xl text-white'>Roadmap</h2>
+                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 md:pl-0 gap-7 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[121px]">
                     {ROADMAP_DATA.map((item, idx) => (
                         <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`}
                             key={idx}
@@ -36,7 +36,7 @@ const RoadMap = () => {
                                 {item.data && <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className="flex items-start"><span className='mx-2.5 p-[1.9px] mt-2.5 bg-white rounded-full'></span><p className='font-normal '>{item.data}</p></div>}
                             </div>
                             <div
-                                className={`absolute flex items-center top-0 ${isRightAligned(idx)
+                                className={`absolute flex items-center -top-1.5 sm:top-0 ${isRightAligned(idx)
                                     ? 'md:-left-20 -left-[52px] sm:-left-[67.6px]'
                                     : 'md:-right-20 md:left-auto -left-[52px] sm:-left-[67.6px] md:flex-row-reverse'
                                     }`}
