@@ -1,10 +1,10 @@
 export const NAV_ITEMS_DATA = [
-    { text: "About", url: "#hero", },
-    { text: "IBO Event", url: "#hero", },
+    { text: "About", url: "#stretch", },
+    { text: "IBO Event", url: "#game", },
     { text: "EEFI Tokenomics", url: "#hero", },
-    { text: "Team", url: "#blog", },
-    { text: "Partners", url: "#team", },
-    { text: "Roadmap", url: "#product", },
+    { text: "Team", url: "#hero", },
+    { text: "Partners", url: "#hero", },
+    { text: "Roadmap", url: "#roadmap", },
 ];
 export const DROPDOWN_DATA = [
     { text: "data 1" },

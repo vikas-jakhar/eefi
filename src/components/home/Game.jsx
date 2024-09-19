@@ -4,7 +4,7 @@ import table from "../../assets/images/webp/table.webp";
 
 const Game = () => {
     return (
-        <div className='sm:py-16 py-12 bg-game-layer bg-cover -mt-1'>
+        <div className='sm:py-16 py-12 bg-game-layer bg-cover -mt-1' id='game'>
             <div className="container my-1 sm:my-0">
                 <div className="flex items-center gap-6 lg:flex-row flex-col justify-between">
                     <div className="max-w-[572px] w-full flex flex-col sm:items-center lg:items-start">

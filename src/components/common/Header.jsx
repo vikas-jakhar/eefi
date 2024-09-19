@@ -47,7 +47,7 @@ const Header = () => {
                         <div className={`flex flex-col lg:flex-row lg:pl-16 items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:backdrop-blur-md bg-medium-blue lg:bg-transparent max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
                             }`}>
                             {NAV_ITEMS_DATA.map((items, index) => (
-                                <a key={index} href={`/${items.url}`} onClick={(e) => handleClick(e, items.url.substring(1))} className='font-medium lg:text-base text-lg leading-5 text-white duration-300 ease-linear after:[] after:absolute after:bg-white after:h-px after:w-0 after:right-0 after:bottom-0 after:rounded after:duration-300 after:ease-linear hover:after:w-full hover:after:right-auto hover:after:left-0 relative'>{items.text}</a>
+                                <a key={index} href={`${items.url}`} onClick={(e) => handleClick(e, items.url.substring(1))} className='font-medium lg:text-base text-lg leading-5 text-white duration-300 ease-linear after:[] after:absolute after:bg-white after:h-px after:w-0 after:right-0 after:bottom-0 after:rounded after:duration-300 after:ease-linear hover:after:w-full hover:after:right-auto hover:after:left-0 relative'>{items.text}</a>
                             ))}
                             <div className="relative">
                                 <button
