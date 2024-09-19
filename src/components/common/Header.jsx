@@ -77,10 +77,10 @@ const Header = () => {
                         </button>
                         <button
                             aria-label='Toggle Navigation Menu'
-                            className={`cursor-pointer relative z-[90] lg:hidden ${show ? '' : 'cross'}`}
+                            className="cursor-pointer relative w-8 h-7 z-[90] lg:hidden"
                             onClick={() => setShow(!show)}>
                             {[...Array(3)].map((_, i) => (
-                                <span key={i} className='w-8 h-[3px] rounded-xl bg-white block duration-300 ease-linear my-[7px]'></span>
+                                <span key={i} className={`w-full h-1 rounded-xl bg-white block duration-300 ease-linear absolute ${i === 0 ? "top-0 left-0" : i === 1 ? "top-1/2 -translate-y-1/2" : "bottom-0 left-0"} ${i === 0 && !show ? "rotate-45 top-1/2 -translate-y-1/2" : ""} ${i === 2 && !show ? "-rotate-45 top-1/2 -translate-y-1/2 bottom-auto" : ""} ${i === 1 && !show ? "hidden" : "flex"}`}></span>
                             ))}
                         </button>
                     </div>
