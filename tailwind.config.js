@@ -39,6 +39,9 @@ module.exports = {
       },
       lineHeight: {
         'custom-xl': "55px",
+      },
+      dropShadow: {
+        "custom-xl": "1px 1px 0px black"
       }
     },
   },

@@ -9,11 +9,11 @@ const RoadMap = () => {
         <div className='bg-roadmap-layer bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed'>
             <div className="container my-12 relative z-[1]">
                 <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-4xl lg:text-custom-xl text-white'>Roadmap</h2>
-                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 lg:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px]">
+                <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 md:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px]">
                     {ROADMAP_DATA.map((item, idx) => (
                         <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`}
                             key={idx}
-                            className={`max-w-[373px] relative w-full border border-light-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-off-blue ${isRightAligned(idx) ? 'lg:ml-auto' : ''}`}
+                            className={`lg:max-w-[373px] md:max-w-[298px] max-w-[373px] relative w-full border border-light-blue py-5 sm:py-9 px-2 sm:px-4 rounded-lg lg:-mt-3 bg-off-blue ${isRightAligned(idx) ? 'md:ml-auto' : ''}`}
                         >
                             <p data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`} className='font-medium text-xl text-white font-plus'>{item.number}</p>
                             <div className='mt-4 text-white text-base font-normal'>
@@ -37,8 +37,8 @@ const RoadMap = () => {
                             </div>
                             <div
                                 className={`absolute flex items-center top-0 ${isRightAligned(idx)
-                                    ? 'lg:-left-20 -left-[52px] sm:-left-[67.6px]'
-                                    : 'lg:-right-20 lg:left-auto -left-[52px] sm:-left-[67.6px] lg:flex-row-reverse'
+                                    ? 'md:-left-20 -left-[52px] sm:-left-[67.6px]'
+                                    : 'md:-right-20 md:left-auto -left-[52px] sm:-left-[67.6px] md:flex-row-reverse'
                                     }`}
                             >
                                 <div className="relative w-6 h-6">
@@ -53,7 +53,7 @@ const RoadMap = () => {
                             </div>
                         </div>
                     ))}
-                    <span data-aos='fade-up' className='flex h-[99%] lg:h-full w-0.5 bg-medium-blue absolute top-3 lg:top-0 left-0 sm:left-10 lg:left-1/2 lg:-translate-x-1/2'></span>
+                    <span data-aos='fade-up' className='flex h-[99%] md:h-full w-0.5 bg-medium-blue absolute top-3 md:top-0 left-0 sm:left-10 md:left-1/2 md:-translate-x-1/2'></span>
                 </div>
             </div>
             <img src={clouds} alt="clouds" className='w-full absolute top-0 left-0 -translate-y-1/2' />
