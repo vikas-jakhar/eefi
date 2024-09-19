@@ -1,6 +1,6 @@
 import Icons from '../common/Icons'
 import { GAME_DATA } from '../../utils/Helper'
-import table from "../../assets/images/webp/table-image.webp";
+import table from "../../assets/images/webp/table.webp";
 
 const Game = () => {
     return (
@@ -33,6 +33,7 @@ const Game = () => {
                             ))}
                         </div>
                         <img src={table} alt="table" className='top-0 absolute left-0 w-full h-full' />
+                        <p className='font-extrabold text-sm text-white absolute top-[105px] left-[55%]'>Interact</p>
                     </div>
                 </div>
             </div>

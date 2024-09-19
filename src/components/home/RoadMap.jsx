@@ -8,7 +8,7 @@ const RoadMap = () => {
     return (
         <div className='bg-roadmap-layer bg-cover relative py-2 sm:py-10 lg:py-24 bg-fixed'>
             <div className="container my-12 relative z-[1]">
-                <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-4xl lg:text-custom-xl text-white'>Roadmap</h2>
+                <h2 data-aos='zoom-in' className='font-bold machina_bold text-center text-2xl lg:text-custom-xl text-white'>Roadmap</h2>
                 <div className="max-w-[880px] w-full relative pl-10 sm:pl-24 md:pl-0 gap-4 flex flex-col lg:gap-0 mx-auto mt-5 sm:mt-14 md:mt-20 lg:mt-[117px]">
                     {ROADMAP_DATA.map((item, idx) => (
                         <div data-aos={`${isRightAligned(idx) ? 'fade-left' : 'fade-right'}`}
@@ -53,7 +53,7 @@ const RoadMap = () => {
                             </div>
                         </div>
                     ))}
-                    <span data-aos='fade-up' className='flex h-[99%] md:h-full w-0.5 bg-medium-blue absolute top-3 md:top-0 left-0 sm:left-10 md:left-1/2 md:-translate-x-1/2'></span>
+                    <span data-aos='fade-up' className='flex h-[99%] lg:h-full w-0.5 bg-medium-blue absolute top-3 lg:top-0 left-0 sm:left-10 md:left-1/2 md:-translate-x-1/2'></span>
                 </div>
             </div>
             <img src={clouds} alt="clouds" className='w-full absolute top-0 left-0 -translate-y-1/2' />
