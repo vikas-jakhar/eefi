@@ -34,8 +34,8 @@ export const ROADMAP_DATA = [
     },
     {
         number: "Q1 2024", text: "Elastic Research and Development: Explore additional vault strategies and develop risk and due-diligence procedures associated with strategy development and implementation ", items: [
-            { title: "Elastic Vault (Sub-Vaults): Begin exploring additional tokens to add to core Elastic Vault strategy", text: "Begin developing comprehensive tokenomics for $EFT (Elastic Protocol governance token) ", data: "First $EEFI Bonds Program [Bond Protocol] (beta): treasury bolster fundraise " },
-        ],
+            { title: "Elastic Vault (Sub-Vaults): Begin exploring additional tokens to add to core Elastic Vault strategy", text: "Arbitrum Layer 2 yield strategy considerations ", data: "Begin developing comprehensive tokenomics for $EFT (Elastic Protocol governance token) "  },
+        ],data: "First $EEFI Bonds Program [Bond Protocol] (beta): treasury bolster fundraise "
     },
     {
         number: "Q2 2024", text: "Gearbox | OHM [Perp-Leverage] Vault", items: [

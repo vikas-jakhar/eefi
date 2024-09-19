@@ -26,14 +26,14 @@ const Game = () => {
                                         <div key={index} data-aos='fade-left' className="sm:max-w-[160px] max-w-[103px] h-full shadow-custom-xl w-full px-2 pb-2 min-h-[130px] bg-white pt-[18px] rounded-md flex flex-col items-center">
                                             <Icons className='max-w-6 w-full md:max-w-7' iconName={data.icon} />
                                             <p data-aos='fade-left' className='mt-2 machina_bold capitalize font-extrabold text-black text-sm sm:leading-5 sm:text-base text-center'>{data.title}</p>
-                                            <p data-aos='fade-left' className='font-normal capitalize text-sm text-black max-w-[123px] text-center mt-1'>{data.text}</p>
+                                            <p data-aos='fade-left' className='font-normal capitalize leading-4 text-sm text-black max-w-[123px] text-center mt-1'>{data.text}</p>
                                         </div>
                                     ))}
                                 </div>
                             ))}
                         </div>
                         <img src={table} alt="table" className='sm:top-0 -top-5 absolute left-0 w-full h-[104%] sm:h-[101%]' />
-                        <p className='font-extrabold text-sm text-white absolute top-[110px] sm:top-[105px] left-[55%]'>Interact</p>
+                        <p className='font-extrabold text-sm text-white absolute top-[110px] z-10 sm:top-[105px] left-[55%]'>Interact</p>
                     </div>
                 </div>
             </div>
