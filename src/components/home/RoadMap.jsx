@@ -56,9 +56,9 @@ const RoadMap = () => {
                     <span data-aos='fade-up' className='flex h-[99%] lg:h-full w-0.5 bg-medium-blue absolute top-3 lg:top-0 left-0 sm:left-10 md:left-1/2 md:-translate-x-1/2'></span>
                 </div>
             </div>
-            <img loading='lazy' rel="preload" as="image" src={clouds} alt="clouds" className='w-full absolute top-0 left-0 -translate-y-1/2' />
-            <img loading='lazy' rel="preload" as="image" src={clouds} alt="clouds" className='w-full absolute -top-3 left-0 lg:hidden -translate-y-1/2' />
-            <img loading='lazy' rel="preload" as="image" src={clouds} alt="clouds" className='w-full absolute -top-1 left-0 lg:hidden -translate-y-1/2' />
+            <img loading='lazy' src={clouds} alt="clouds" className='w-full absolute top-0 left-0 -translate-y-1/2' />
+            <img loading='lazy' src={clouds} alt="clouds" className='w-full absolute -top-3 left-0 lg:hidden -translate-y-1/2' />
+            <img loading='lazy' src={clouds} alt="clouds" className='w-full absolute -top-1 left-0 lg:hidden -translate-y-1/2' />
         </div>
     );
 };
