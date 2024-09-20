@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <div className='relative pb-24 lg:pb-0' id='hero'>
             <img className='max-w-[1210px] w-full absolute right-2 bottom-0' src={heroBg} alt="heroBg" />
-            <img className='absolute -top-4 left-0 xl:max-w-[1160px] lg:max-w-[900px] object-cover lg:h-[710px] xl:h-[810px] h-[650px] max-md:object-cover md:w-full 2xl:hidden block' src={heroVector} alt="#" />
+            <img className='absolute -top-4 left-0 xl:max-w-[1160px] lg:max-w-[900px] object-cover lg:h-[710px] xl:h-[810px] h-[650px] md:w-full 2xl:hidden block' src={heroVector} alt="#" />
             <Header />
             <div className='container mb-20 pb-20 lg:pb-0 lg:mb-0 relative'>
                 <div className='flex lg:flex-row flex-col xl:-mt-12 relative z-[1]'>
