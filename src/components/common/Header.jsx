@@ -39,7 +39,7 @@ const Header = () => {
     return (
         <>
             <div className='container relative z-[2]'>
-                <div className={`${!show ? "min-h-screen" : ""} `}>
+                <div className={`${!show ? "min-h-screen" : ""} `}>  
                     <div className="flex justify-between items-center bg-transparent py-1.5">
                         <a href="/" className='-ml-2.5'>
                             <img className='pointer-events-none w-[68px]' src={logo} alt="logo" />
