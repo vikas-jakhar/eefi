@@ -17,9 +17,9 @@ const Stretch = () => {
                     </p>
                 </div>
             </div>
-            <img loading='lazy' data-aos='fade-left' className='max-w-[569px] w-1/2 md:w-[41%] lg:w-1/2 xl:w-full absolute bottom-14 right-1 xl:right-[10%] pointer-events-none' src={bear} alt="bear" />
-            <img loading='lazy' data-aos='fade-right' className='max-w-[684px] w-7/12 md:w-1/2 lg:w-7/12 xl:w-full absolute bottom-14 left-1 xl:left-[10%] pointer-events-none' src={bull} alt="bull" />
-            <img loading='lazy' data-aos='zoom-in' className='pointer-events-none max-w-[100px] w-[10%] sm:w-full absolute bottom-14 left-1/2 -translate-x-1/2' src={men} alt="men" />
+            <img data-aos='fade-left' className='max-w-[569px] w-1/2 md:w-[41%] lg:w-1/2 xl:w-full absolute bottom-14 right-1 xl:right-[10%] pointer-events-none' src={bear} alt="bear" />
+            <img data-aos='fade-right' className='max-w-[684px] w-7/12 md:w-1/2 lg:w-7/12 xl:w-full absolute bottom-14 left-1 xl:left-[10%] pointer-events-none' src={bull} alt="bull" />
+            <img data-aos='zoom-in' className='pointer-events-none max-w-[100px] w-[10%] sm:w-full absolute bottom-14 left-1/2 -translate-x-1/2' src={men} alt="men" />
         </div>
     )
 }
