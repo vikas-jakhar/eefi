@@ -32,7 +32,7 @@ const Game = () => {
                                 </div>
                             ))}
                         </div>
-                        <img src={table} alt="table" className='sm:top-0 -top-5 absolute left-0 w-full h-[104%] sm:h-[101%]' />
+                        <img loading='lazy' rel="preload" as="image" src={table} alt="table" className='sm:top-0 -top-5 absolute left-0 w-full h-[104%] sm:h-[101%]' />
                         <p className='font-extrabold text-sm text-white absolute top-[110px] z-10 sm:top-[105px] left-[55%]'>Interact</p>
                     </div>
                 </div>

@@ -42,7 +42,7 @@ const Header = () => {
                 <div className={`${!show ? "min-h-screen" : ""} `}>
                     <div className="flex justify-between items-center bg-transparent py-1.5">
                         <a href="/" className='-ml-2.5'>
-                            <img className='pointer-events-none w-[68px]' src={logo} alt="#" />
+                            <img loading='lazy' rel="preload" as="image" className='pointer-events-none w-[68px]' src={logo} alt="#" />
                         </a>
                         <div className={`flex flex-col lg:flex-row lg:pl-16 items-center gap-7 lg:gap-6 max-lg:fixed max-lg:justify-center duration-300 ease-linear top-0 max-lg:-right-full max-lg:backdrop-blur-md bg-medium-blue lg:bg-transparent max-lg:z-[90] max-lg:h-screen max-lg:w-full ${show ? "" : " !right-0"
                             }`}>
